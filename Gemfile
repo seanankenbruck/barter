@@ -49,5 +49,7 @@ gem 'twitter-bootstrap-rails'
 
 gem 'devise'
 
+gem 'mail_form'
+
 
 

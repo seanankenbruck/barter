@@ -49,8 +49,8 @@
           <a class="brand" href="../welcome/index">BarterRaleigh</a>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
+              <li><%= link_to "Contact", contact_forms_path  %></li>
+              <li><%= link_to "About", "/path2"  %></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
               <% else %>

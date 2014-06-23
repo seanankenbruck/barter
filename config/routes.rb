@@ -1,4 +1,7 @@
 BarterRaleigh::Application.routes.draw do
+  resources :contact_forms
+  get "contact_form/new"
+  get "contact_form/create"
   devise_for :users
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -9,6 +12,10 @@ BarterRaleigh::Application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+  
+  #{CONTACT FORM INFO}
+  #resources :messages, only [:index, :create]
+  #match "contact" => "messages#index"
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
