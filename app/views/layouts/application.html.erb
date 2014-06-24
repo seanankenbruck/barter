@@ -38,7 +38,7 @@
   </head>
   <body>
 
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
@@ -47,10 +47,10 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="../welcome/index">BarterRaleigh</a>
-          <div class="container nav-collapse">
+          <div class="float_right">
             <ul class="nav">
               <li><%= link_to "Contact", contact_forms_path  %></li>
-              <li><%= link_to "About", "/path2"  %></li>
+              <li><%= link_to "About", "../pages/about"  %></li>
               <% if user_signed_in? %>
                 <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
               <% else %>
@@ -71,12 +71,12 @@
           </div>
           <div class="span3">
             <div class="well sidebar-nav">
-              <h3>Sidebar</h3>
+              <h3>Easy Nav</h3>
               <ul class="nav nav-list">
-                <li class="nav-header">Sidebar</li>
-                <li><%= link_to "Link1", "/path1"  %></li>
-                <li><%= link_to "Link2", "/path2"  %></li>
-                <li><%= link_to "Link3", "/path3"  %></li>
+                <li class="nav-header">Site Links</li>
+                <li><%= link_to "Asana", href="https://app.asana.com/0/inbox/13091744914504"  %></li>
+                <li><%= link_to "GitHub Page", href="https://github.com/seanankenbruck/barter"  %></li>
+                <li><%= link_to "Gist", href="https://gist.github.com/seanankenbruck"  %></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->

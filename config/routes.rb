@@ -1,9 +1,13 @@
 BarterRaleigh::Application.routes.draw do
+
   resources :contact_forms
   get "contact_form/new"
   get "contact_form/create"
+
   devise_for :users
   get "welcome/index"
+
+  get "pages/about"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
