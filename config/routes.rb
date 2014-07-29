@@ -1,5 +1,7 @@
 BarterRaleigh::Application.routes.draw do
 
+  
+
   resources :contact_forms
   get "contact_form/new"
   get "contact_form/create"
@@ -10,6 +12,12 @@ BarterRaleigh::Application.routes.draw do
   get "pages/about"
 
   get "pages/post_creation"
+  
+  get "pages/edit_profile"
+
+  get "pages/marketplace"
+
+  get "pages/help"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
